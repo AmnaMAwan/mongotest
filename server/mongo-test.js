@@ -6,6 +6,8 @@ const client = new MongoClient(uri, {
     version: ServerApiVersion.v1,
     strict: true,
     deprecationErrors: true,
+    tls: true,
+    tlsInsecure: true,
   }
 });
 async function run() {
